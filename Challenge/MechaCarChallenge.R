@@ -33,3 +33,17 @@ total_summary <- summarize(coils, Mean=mean(coils$PSI), Median=median(coils$PSI)
 
 # For the manufacturing lots
 lot_summary <- coils %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI), Median=median(PSI), Variance=var(PSI), SD=sd(PSI))
+
+######################### DELIVERABLE 3 #########################
+
+# T Test across all lots for PSI difference
+t.test(coils$PSI, mu=mean(coils$PSI))
+
+# Test by individual lots
+lot1 <- coils %>% filter(Manufacturing_Lot=='Lot1')
+lot2 <- coils %>% filter(Manufacturing_Lot=='Lot2')
+lot3 <- coils %>% filter(Manufacturing_Lot=='Lot3')
+
+t.test(lot1$PSI, mu=mean(coils$PSI))
+t.test(lot2$PSI, mu=mean(coils$PSI))
+t.test(lot3$PSI, mu=mean(coils$PSI))

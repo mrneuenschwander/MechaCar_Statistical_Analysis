@@ -17,3 +17,12 @@ Does this linear model predict MPG of MechaCar prototypes effectively?
 
 The final question asks whether the slope of the line is considered to be 0. Without better cleaning of the data, or a wider collection of data points gathered, the answer is currently no. With the Intercept being statistically insignificant at 5.08, there is not sufficient evidence to reject the null hypothesis that the slope is equal to 0.
 
+## Summary Statistics on Suspension Coils
+
+IMAGE HERE
+
+"The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually?"
+
+Considering the frame above, the first 2 Lots are within the 100psi variance. Lot 1 is the most stable, followed by Lot 2. With Lot 3's variance being as high as it is, those coils within that lot may need to be recalled for safety and or quality assurance purposes until they meet the specifications.
+
+
