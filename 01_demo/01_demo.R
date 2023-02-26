@@ -10,7 +10,7 @@ x <- 5
 numlist <- c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
 
 # Import the data as a table
-demo_table <- read.csv(file='demo.csv',check.names=F,stringsAsFactors = F)
+demo_table <- read.csv(file='/01_demo/demo.csv',check.names=F,stringsAsFactors = F)
 library(jsonlite)
 
 demo_table2 <- fromJSON(txt='demo.json')
